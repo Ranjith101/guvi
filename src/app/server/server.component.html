@@ -1,0 +1,48 @@
+<!-- <p>server works!</p>
+<input type="text"
+
+ [(ngModel)]="serverName" class="form-control">
+<hr>
+<button class="btn btn-primary" [disabled]="!allowServer" (click)="getServerName()">bootst</button>
+<div *ngIf="servercreated;else servernot">
+  <p>serverId = {{serverId}}, serverName = {{serverName}}</p>
+  <p>{{allowServer}}</p>
+  <p>Server was Created </p>
+</div>
+<ng-template #servernot>
+  <p>server not created</p>
+</ng-template> -->
+
+<!-- <ul class="list-group" *ngFor="let item of setlist; let i = index">
+  <div *ngIf="item % 2 ==0">
+    <li class="list-group-item" [ngClass]="{online:serverStatus === 'online'}" [ngStyle]="{backgroundColor:getStatus()}">
+      {{i+1}}){{item}}
+    </li>
+  </div>
+</ul>
+
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="5">5</p>
+  <p *ngSwitchCase="21">2</p>
+  <p *ngSwitchCase="7">7</p>
+  <p *ngSwitchDefault>1077</p>
+</div>
+<p appHighlight>Highlight me!</p> -->
+
+<!-- <p [appHighlight]="'yellow'">Highlight me in yellow!</p>
+<p appHighlight="red">Highlight me in red!</p> -->
+
+
+     <div class="panel panel-default">
+      <div class="panel-heading">{{element.name}}</div>
+      <div class="panel-body">
+        <p>
+          <strong *ngIf="element.type === 'server'" style="color: red;">
+             {{element.content}}
+          </strong>
+          <em *ngIf="element.type === 'blueprint'" >
+            {{element.content}}
+         </em>
+        </p>
+      </div>
+     </div>
